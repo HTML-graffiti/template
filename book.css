@@ -1,0 +1,170 @@
+body {padding:0; margin:0; overflow-x:hidden;}
+ul {padding:0; margin:0.25rem 0;}
+li {list-style: none;}
+h2 {margin:1rem 0 0; padding:0; font-size:1.25rem;}
+hr {border:hidden; margin-bottom:5%;}
+
+.is-hide,
+.nothing,
+.none {
+  display:none;
+  transition:.5s all;
+}
+
+#header {
+  padding:1.25% 2.5%;
+  font-size:1.5rem;
+  display: flex;
+  width:95%;
+  top:0; left:0;
+  position:absolute;
+  z-index:100;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header a {
+  color:#000;
+  text-decoration:none;
+  border-bottom:2px solid transparent;
+}
+#header a:hover {
+  cursor:pointer;
+  color:#ccc;
+  text-shadow:0.1rem 0.1rem #000;
+  border-bottom:2px solid #000;
+}
+#org, 
+.list {
+  width:100%;
+  max-width:45rem;
+  margin:auto;
+}
+#org {
+  position:relative;
+  top:0;
+  z-index:2;
+  padding:5rem 2.5% 0;
+  margin-bottom:-2.5rem;
+}
+#org ul {
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#org .label {
+  display: inline-block;
+  background-color:#fff;
+  text-shadow:0.1rem 0.1rem #fff;
+  margin:0.25rem;
+  padding:0.25rem 0.5rem;
+  font-size:2.5rem;
+  color: #000;
+  border-radius:0.5rem;
+  transition:1.5s all;
+}
+#org .status .label {
+  font-size: 1.25rem;
+  border:2px solid #eee;
+}
+#org .label:hover {
+  cursor:pointer;
+  color:#fff;
+  background-color:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transition:.5s all;
+}
+#org p {font-size:1rem; margin:0.5rem 0 0;}
+#org input[type="text"],
+#org textarea {
+  font-size:1rem;
+  border:2px solid;
+  border-radius:0.5rem;
+  padding:1.25%; margin:1.25%;
+}
+#org input[type="text"] {
+  width:88%;
+}
+#org textarea {
+  font-size:1rem;
+  border:2px solid;
+  border-radius:0.5rem;
+  padding:1.25%; margin:1.25%;
+  width:88%; height:5rem;
+}
+#org input[type="checkbox"],
+#org input[type="radio"] {
+  display: none;
+}
+#org input[type="checkbox"]:checked + label,
+#org input[type="radio"]:checked + label {
+  color:#fff;
+  background-color:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+}
+.reset a, .reset-button, button {
+  display:block;
+  font-size:1.5rem;
+  text-align:center;
+  padding:0.25rem 0;
+  margin: 1.5rem 0;
+  background: #fff;
+  text-shadow:0.1rem 0.1rem #fff;
+  cursor: pointer;
+  border:2px solid #000;
+  border-radius:0.5rem;
+  width:94.5%;
+  max-width:45rem;
+  transition:1s all;
+}
+.reset a:hover,
+.reset-button:hover,
+button:hover {
+  color:#fff;
+  background:#eee;
+  text-shadow:0.1rem 0.1rem #000;
+  transition:.5s all;
+}
+
+.list {
+  position:relative;
+  margin-top:5rem;
+  padding:0 0 2rem;
+  display:flex;
+  flex-direction:column-reverse;
+}
+.list li {
+  font-size:1.5rem;
+  position:relative;
+  clear:both;
+  padding:1rem 2rem;
+  transition:.5s all;
+}
+.list li:hover {
+  font-size:250%;
+  z-index:0;
+}
+.list li span,
+.list li p {
+  position:relative;
+  z-index:1;
+  pointer-events:none;
+}
+.list li p {
+  font-size:75%;
+  margin:0.25rem 0 0;
+}
+.list li a {
+  position: absolute;
+  z-index:0;
+  margin:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-indent:-999px;
+}
+#howto {
+  border-top:2px dotted;
+  font-size:1rem;
+  padding:1.25rem;
+}
