@@ -58,7 +58,7 @@ fclose($fp);
 <label for="book" class="label">本を読むようにテキストが表示される挨拶ページ</label></li>
 <li>
 <input type="radio" name="tag" value="list" id="list">
-<label for="list" class="label">絞り込み機能付リストと投稿フォーム</label></li>
+<label for="list" class="label">自分にまつわる事柄のリストページ</label></li>
 </ul>
 </div>
 <div class="search-box status">
