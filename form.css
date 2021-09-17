@@ -63,7 +63,7 @@ html,body {
 }
 #list li p {
   font-size:150%;
-  margin:1vw 0 0;
+  margin:1vw;
 }
 #list li a {
   position: absolute;
