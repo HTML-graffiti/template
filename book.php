@@ -32,7 +32,7 @@ fclose($fp);
 <script src="org.js"></script>
 <script type="text/javascript">
 </script>
-<link rel="stylesheet" href="book.css"/>
+<link rel="stylesheet" href="form.css"/>
 <style type="text/css">
 #contents {
   margin:5vw 0 0;
