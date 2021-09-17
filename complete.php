@@ -7,7 +7,7 @@ $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
 $label = (string)filter_input(INPUT_POST, 'label');
 
-$fp = fopen('index.csv', 'a+b');
+$fp = fopen('book.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $contents, $tag, $label,]);
@@ -28,7 +28,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta http-equiv="refresh" content="1;URL=submit.php">
+<meta http-equiv="refresh" content="3;URL=submit.php">
 <style type="text/css">
 html, body {padding:0; margin:0;}
 #foot {

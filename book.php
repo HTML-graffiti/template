@@ -7,7 +7,7 @@ $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
 $label = (string)filter_input(INPUT_POST, 'label');
 
-$fp = fopen('index.csv', 'a+b');
+$fp = fopen('book.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $contents, $tag, $label,]);
@@ -44,8 +44,6 @@ fclose($fp);
 </style>
 </head>
 <body>
-<div id="header">
-</div>
 
 <form id="org">
 <div class="search-box tag">

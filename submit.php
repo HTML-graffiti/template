@@ -7,7 +7,7 @@ $contents = (string)filter_input(INPUT_POST, 'contents');
 $tag = (string)filter_input(INPUT_POST, 'tag');
 $label = (string)filter_input(INPUT_POST, 'label');
 
-$fp = fopen('index.csv', 'a+b');
+$fp = fopen('book.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $contents, $tag, $label,]);
@@ -34,7 +34,7 @@ $(function(){
 $("#").load("");
 })
 </script>
-<link rel="stylesheet" href="/coding/submit/org/book.css"/>
+<link rel="stylesheet" href="book.css"/>
 <style type="text/css">
 </style>
 </head>

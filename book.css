@@ -1,5 +1,5 @@
 body {padding:0; margin:0; overflow-x:hidden;}
-ul {padding:0; margin:0.25rem 0;}
+ul {padding:0; margin:2.5vw 0;}
 li {list-style: none;}
 h2 {margin:1rem 0 0; padding:0; font-size:1.25rem;}
 hr {border:hidden; margin-bottom:5%;}
@@ -13,7 +13,7 @@ hr {border:hidden; margin-bottom:5%;}
 
 #header {
   padding:1.25% 2.5%;
-  font-size:1.5rem;
+  font-size:2.5vw;
   display: flex;
   width:95%;
   top:0; left:0;
@@ -33,18 +33,16 @@ hr {border:hidden; margin-bottom:5%;}
   text-shadow:0.1rem 0.1rem #000;
   border-bottom:2px solid #000;
 }
+
 #org,
 .list {
-  width:100%;
   max-width:45rem;
   margin:auto;
 }
+
 #org {
   position:relative;
-  top:0;
-  z-index:2;
-  padding:5rem 2.5% 0;
-  margin-bottom:-2.5rem;
+  padding:5.5vw 2.5% 0;
 }
 #org ul {
   position:relative;
@@ -54,42 +52,43 @@ hr {border:hidden; margin-bottom:5%;}
 #org .label {
   display: inline-block;
   background-color:#fff;
-  text-shadow:0.1rem 0.1rem #fff;
-  margin:0.25rem;
-  padding:0.25rem 0.5rem;
-  font-size: 1.25rem;
+  text-shadow:0.25vw 0.25vw #fff;
+  margin:0.25vw 0.5vw;
+  padding:0.5vw 1vw;
+  font-size: 2vw;
   color: #000;
   border-radius:0.5rem;
   transition:1.5s all;
 }
 #org .status .label {
-  font-size: 1.25rem;
-  border:2px solid #eee;
+  font-size: 1.5vw;
+  border:1px solid #eee;
 }
 #org .label:hover {
   cursor:pointer;
   color:#fff;
   background-color:#eee;
-  text-shadow:0.1rem 0.1rem #000;
+  text-shadow:0.25vw 0.25vw #000;
   transition:.5s all;
 }
+
 #org p {font-size:1rem; margin:0.5rem 0 0;}
 #org input[type="text"],
 #org textarea {
-  font-size:1rem;
-  border:2px solid;
+  font-size:2vw;
+  border:1px solid;
   border-radius:0.5rem;
   padding:1.25%; margin:1.25%;
 }
 #org input[type="text"] {
-  width:88%;
+  width:95%;
 }
 #org textarea {
-  font-size:1rem;
-  border:2px solid;
+  font-size:1.5vw;
+  border:1px solid;
   border-radius:0.5rem;
   padding:1.25%; margin:1.25%;
-  width:88%; height:5rem;
+  width:95%; height:10vw;
 }
 #org input[type="checkbox"],
 #org input[type="radio"] {
@@ -99,21 +98,20 @@ hr {border:hidden; margin-bottom:5%;}
 #org input[type="radio"]:checked + label {
   color:#fff;
   background-color:#eee;
-  text-shadow:0.1rem 0.1rem #000;
+  text-shadow:0.25vw 0.25vw #000;
 }
 .reset a, .reset-button, button {
   display:block;
-  font-size:1.5rem;
+  font-size:2vw;
   text-align:center;
-  padding:0.25rem 0;
-  margin: 1.5rem 0;
+  padding:1.25%;
+  margin: 1.25%;
   background: #fff;
-  text-shadow:0.1rem 0.1rem #fff;
+  text-shadow:0.25vw 0.25vw #fff;
   cursor: pointer;
-  border:2px solid #000;
+  border:1px solid #000;
   border-radius:0.5rem;
-  width:94.5%;
-  max-width:45rem;
+  width:95%;
   transition:1s all;
 }
 .reset a:hover,
@@ -127,26 +125,25 @@ button:hover {
 
 .list {
   position:relative;
-  margin-top:5rem;
-  padding:0 0 2rem;
+  margin-top:2.5vw;
+  padding:0 0 1vw;
   display:flex;
   flex-direction:column-reverse;
 }
 .list li {
-  font-size:1.5rem;
+  font-size:2vw;
   position:relative;
   clear:both;
-  padding:1rem 2rem;
+  padding:1vw 2.5vw;
   transition:.5s all;
 }
 .list li:hover {
-  font-size:250%;
+  font-size:200%;
   z-index:0;
 }
 .list li span,
 .list li p {
   position:relative;
-  z-index:1;
   pointer-events:none;
 }
 .list li p {

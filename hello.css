@@ -1,6 +1,7 @@
 #hello {
   font-size:5vw;
   display:block;
+  padding:2.5vw 0;
 }
 #hello .open {display:none;}
 
@@ -10,11 +11,10 @@
 }
 #hello a {
   display:inline-block;
-  font-size:75%;
   text-decoration:none;
   color:#000;
   padding:0.25rem 0.75rem;
-  margin:0.5rem 0;
+  font-size:125%;
   border:0.1vw solid;
   border-radius:2.5rem;
 }
