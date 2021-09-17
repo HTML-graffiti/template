@@ -27,7 +27,7 @@ fclose($fp);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title> 📝  List of The Website of Listing somethings </title>
+<title> 📝  List of The Website using this Webtemplate </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="org.js"></script>
 <script type="text/javascript">
@@ -42,7 +42,7 @@ fclose($fp);
 <body>
 
 <div id="contents">
-<p class="writing">📝 List of The Website of Listing somethings</p>
+<p class="writing">📝 List of The Website using this Webtemplate</p>
 <ul id="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
