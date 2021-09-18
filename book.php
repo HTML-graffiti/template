@@ -49,7 +49,7 @@ fclose($fp);
 <li class="item">
 <p class="name"><?=h($row[0])?></p>
 <span class="title"><?=h($row[1])?></span>
-<a class="link" href="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer"></a>
+<a class="link" href="<?=h($row[1])?>" target="_blank" rel="noopener noreferrer"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>
